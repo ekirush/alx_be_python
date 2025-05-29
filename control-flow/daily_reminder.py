@@ -18,11 +18,11 @@ time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case 'high':
-        message = f"{task} is a high priority task "
+        message = f"Reminder: {task} is a high priority task "
     case 'medium':
         message = f"{task} is a medium priority task "
     case 'low':
-        message = f"{task} is a low priority task "
+        message = f"Note: {task} is a low priority task "
     case _:
         message = 'Enter Correct Priority'
         
