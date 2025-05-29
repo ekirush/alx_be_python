@@ -14,7 +14,7 @@ demonstrating control flow and loops without relying on data structures to store
 
 task = input('Enter your task: ').strip()
 priority = input('Priority (high, medium, low): ').lower()
-time_bound = input('Is it time-bound (yes or no): ').strip().lower()
+time_bound = input('Is it time-bound (yes,no): ').strip().lower()
 
 match priority:
     case 'high':
