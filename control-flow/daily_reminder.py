@@ -12,9 +12,9 @@ The program will then provide a customized reminder for that task,
 demonstrating control flow and loops without relying on data structures to store multiple tasks.
 '''
 
-task = input('Enter your task: ').strip()
-priority = input('Priority (high, medium, low): ').lower()
-time_bound = input('Is it time-bound (yes,no): ').strip().lower()
+task = input('Enter your task: ')
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case 'high':
