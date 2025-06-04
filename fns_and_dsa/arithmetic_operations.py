@@ -16,6 +16,8 @@ def perform_operation(num1, num2, operation):
         case 'divide':
             if num2 == 0:
                 results = f'Impossible to divide a number {num1} with {num2}'
-            else:
+            elif num2 > 0 or num2 < 0:
                 results = num1 / num2
+            else:
+                results = f"Enter correct value"
     return results
