@@ -31,7 +31,8 @@ def main():
                 print('Shopping list is empty')
         elif choice == '3':
             # Display the shopping list
-            print(shopping_list)
+            for list in shopping_list:
+                print(list)
         elif choice == '4':
             print("Goodbye!")
             break
