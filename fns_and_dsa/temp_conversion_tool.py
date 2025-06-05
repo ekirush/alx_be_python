@@ -19,6 +19,10 @@ def convert_to_fahrenheit(celsius):
 
 # Prompt the user to enter a temperature and specify whether it’s in Celsius or Fahrenheit
 def temperature_display():
+    '''
+    Funtion that prompt user to enter temperature and displays the converted temperature eithe
+    in Celsius or in Fahrenheit
+    '''
     try:
         temperature = float(input("Enter the temperature to convert: "))
         temp_type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
