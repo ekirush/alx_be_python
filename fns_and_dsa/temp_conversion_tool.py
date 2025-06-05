@@ -19,17 +19,21 @@ def convert_to_fahrenheit(celsius):
 
 # Prompt the user to enter a temperature and specify whether it’s in Celsius or Fahrenheit
 def temperature_display():
-    temperature = int(input("Enter the temperature to convert: "))
-    temp_type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
-
-    if temp_type == 'F':
-        conversion = convert_to_celsius(temperature)
-        print(f"{temperature}°F is {conversion}°C")
-    elif temp_type == 'C':
-        conversion = convert_to_fahrenheit(temperature)
-        print(f"{temperature}°C is {conversion}°F")
-    else:
-        print('Enter correct values')
+    try:
+        temperature = float(input("Enter the temperature to convert: "))
+        temp_type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+    
+     
+        if temp_type == 'F':
+            conversion = convert_to_celsius(temperature)
+            print(f"{temperature}°F is {conversion}°C")
+        elif temp_type == 'C':
+            conversion = convert_to_fahrenheit(temperature)
+            print(f"{temperature}°C is {conversion}°F")
+        else:
+            print('Invalid temperature Type')
+    except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
         
 temperature_display()
 
