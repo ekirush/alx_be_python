@@ -16,7 +16,6 @@ class BankAccount:
     # Implimenting Deposit Method
     def deposit(self, amount):
         self.account_balance += amount
-    
     # Implimenting withdraw Method
     def withdraw(self, amount):
         if self.account_balance >= amount:
@@ -29,4 +28,4 @@ class BankAccount:
     
     # Display Balance
     def display_balance(self):
-        print(f"Your current account balance is: {self.account_balance}")
+        print(f"Current Balance: {self.account_balance}")
