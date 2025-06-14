@@ -8,7 +8,7 @@ class Test_Class(unittest.TestCase):
         self.calc = SimpleCalculator()
         
         
-    def test_add(self):
+    def test_addition(self):
         addition = self.calc.add(5,3)
         self.assertEqual(addition,8)
         
