@@ -9,24 +9,19 @@ class Test_Class(unittest.TestCase):
         
         
     def test_addition(self):
-        addition = self.calc.add(5,3)
-        self.assertEqual(addition,8)
+        self.assertEqual(self.calc.add(5,3),8)
         
     def test_subtract(self):
-        subtraction = self.calc.subtract(10,2)
-        self.assertEqual(subtraction,8)
+        self.assertEqual(self.calc.subtract(10,2),8)
         
     def test_multiply(self):
-        multiply = self.calc.multiply(10,2)
-        self.assertEqual(multiply,20)
+        self.assertEqual(self.calc.multiply(10,2),20)
         
     def test_divide(self):
-        division = self.calc.divide(10,2)
-        self.assertEqual(division,5)
+        self.assertEqual(self.calc.divide(10,2),5)
         
     def test_divide_by_zero(self):
-        division = self.calc.divide(10, 0)
-        self.assertEqual(division, None)
+        self.assertEqual(self.calc.divide(10, 0), None)
 
 # if __name__ == '__main__':
 #     unittest.main()
